@@ -551,7 +551,7 @@ const VistaPlanOperativo=({user,entidad,datos,isAdmin})=>{
       <div className="card">
         <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'1rem'}}>
           <h3>Actividades ({actividades.length})</h3>
-          <button className="btn-primary" style={{width:'auto'}} onClick={()=>{setFormActividad({});setItemEdit(null);setModalActividad(true);}} disabled={!isAdmin}>+ Nueva Actividad</button>
+          <button className="btn-primary" style={{width:'auto'}} onClick={()=>{setFormActividad({});setItemEdit(null);setModalActividad(true);}}>+ Nueva Actividad</button>
         </div>
         {actividades.length===0?<p style={{color:'#9CA3AF'}}>Sin actividades</p>:
         <table className="tabla">
